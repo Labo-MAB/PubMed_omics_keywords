@@ -1,0 +1,4 @@
+proteomics	proteomic	proteomic
+glycomics	glycomic	glycomic
+lipidomics	lipidomic	lipidomic
+metabolomics	metabolomic	metabolomic

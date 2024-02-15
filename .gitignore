@@ -1,0 +1,7 @@
+# ignore all tsv and txt files in the repository
+*.tsv
+*.swp
+pubmed/
+results/**
+.vscode/
+__pycache__/
