@@ -9,7 +9,7 @@
 # https://github.com/sahansera/medline-pubmed-extractor
 
 # Download and unzip the pubmed data
-touch pubmed/xml/
+mkdir -p pubmed/xml/
 for i in $(seq -w 0001 1219)
 do
     wget https://ftp.ncbi.nlm.nih.gov/pubmed/baseline/pubmed24n${i}.xml.gz -O pubmed/xml/pubmed24n${i}.xml.gz
@@ -17,7 +17,7 @@ do
 done
 
 # Convert xml files to tsv files using medline-pubmed-extractor
-touch pubmed/tsv/
+mkdir -p pubmed/tsv/
 tools/medline-pubmed-extractor/MedlineExtractor/bin/Release/MedlineExtractor pubmed/xml/ pubmed/tsv/
 gzip pubmed/tsv/*
 
